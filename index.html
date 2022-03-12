@@ -8,6 +8,10 @@
         <title>Acme</title>
       </head>
       <body>
+        <script>
+            window.addEventListener("hashchange", function() { scrollBy(0, -100) })
+        </script>
+
         <div id="navBar">
             <nav class="navbar fixed-top navbar-light fixed-1">
                 <div class="covid-banner">
@@ -22,18 +26,21 @@
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                      <li class="nav-item ml-lg-5">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                      <li class="nav-item ml-lg-5">
+                        <a class="nav-link" href="#support-id">Support Us</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Donate</a>
+                      <li class="nav-item ml-lg-5">
+                        <a class="nav-link" href="#covid-section">COVID-19</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                      <li class="nav-item ml-lg-5">
+                        <a class="nav-link" aria-current="page" href="index.html#products-section">Product</a>
+                      </li>
+                      <li class="nav-item ml-lg-5">
+                        <a class="nav-link" href="#last-section">Shop Local</a>
                       </li>
                   </div>
                 </div>
@@ -47,8 +54,8 @@
                 <button type="button" class="btn btn-outline-light">Shop Merch</button>
             </div>
         </div>
-       
-        <div class="support-section boxed-section">
+ 
+        <div id="support-id" class="support-section boxed-section">
             <div class="row">
                 <div class="col-sm-12 col-md-6">
                     <p>WAYS TO SUPPORT</p>
@@ -95,7 +102,7 @@
             </div>
         </div>
     
-        <div class="covid-section">
+        <div id="covid-section" class="covid-section">
             <div class="covid-section-text">
                 <p class="title">How we're keeping you safe during COVID-19</p>
                 <p style="font-size: 20px; color: white;">As an outdoor shop, we’ve taken precautionary measures to ensure the safety of all our customers and team members.</p>
@@ -103,7 +110,7 @@
             </div>
         </div>
 
-        <div class="products-section boxed-section">
+        <div id="products-section" class="products-section boxed-section">
             <div>
                 <p>SHOP PRODUCTS</p>
                 <p style="font-size: 40px; font-weight: bold; margin-top: -20px;">Open 24/7/365.</p>
@@ -130,7 +137,7 @@
             </div>
         </div>
 
-        <div class="last-section">
+        <div id="last-section" class="last-section">
             <div class="shop-section boxed-section">
                 <div class="shop-image"></div>
                 <div class="shop-text">

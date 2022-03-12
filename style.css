@@ -4,9 +4,23 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
     color: white;
+}
+
+.nav-link {
+    color: white !important;
+    border-radius: 10%;
+}
+
+.nav-link:hover {
+    background-color: black;
+    transition: 0.3s;
 }
 
 .covid-banner {
